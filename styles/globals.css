@@ -52,8 +52,21 @@ body {
 }
 
 .clipped {
-    @apply bg-clip-text text-transparent bg-cover bg-no-repeat inline-block;
+    @apply inline-block text-transparent bg-no-repeat bg-cover bg-clip-text;
     /* background-image: url('https://wallpaperset.com/w/full/3/8/a/192904.jpg'); */
     /* background-image: url('/20220605_052931-01 crp.jpeg'); */
     background-image: url('/20220605_052931-01 crp.jpeg');
+}
+
+
+.fragment-skill-shadow{
+    box-shadow:-70px 70px 65px rgb(13 71 161 / 0.07), -30px 30px 30px rgb(13 71 161 / 0.06), -15px 15px 15px rgb(13 71 161 / 0.05), -10px 10px 8px rgb(13 71 161 / 0.04), -4px 4px 4px rgb(13 71 161 / 0.03), -2px 2px 2px rgb(13 71 161 / 0.02);
+}
+
+.fragment-skill-shadow-2{
+    box-shadow:-70px 70px 65px rgb(0 0 0 / 0.07), -30px 30px 30px rgb(0 0 0 / 0.06), -15px 15px 15px rgb(0 0 0 / 0.05), -10px 10px 8px rgb(0 0 0 / 0.04), -4px 4px 4px rgb(0 0 0 / 0.03), -2px 2px 2px rgb(0 0 0 / 0.02);
+}
+
+.skewed-container{
+    transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);
 }

@@ -9,6 +9,16 @@ import { useState } from "react";
 
 import { randomInt } from "@/helpers/Utils";
 
+import SkillFragment from "@/components/Containers/SkillFragment";
+import NodeJsSvg from "@/components/Icons/NodeJsSvg";
+import ReactjsSvg from "@/components/Icons/ReactjsSvg";
+import FigmaSvg from "@/components/Icons/FigmaSvg";
+import GithubSvg from "@/components/Icons/GithubSvg";
+import JavaSvg from "@/components/Icons/JavaSvg";
+import NextjsSvg from "@/components/Icons/NextjsSvg";
+import MongodbSvg from "@/components/Icons/MongodbSvg";
+import MysqlSvg from "@/components/Icons/MysqlSvg";
+
 export default function Home() {
   const [imgFoc, setImgFoc] = useState(randomInt(2));
 
@@ -39,11 +49,8 @@ export default function Home() {
             </p>
             <p className="mt-3 text-xl tracking-wider md:mt-9 md:text-2xl font-maven-pro">
               A self-taught
-              <span className="text-accent ">
-                {" "}
-                web developer
-              </span>{" "}
-              from the <span className="font-bold font-inter">Philippines</span>.
+              <span className="text-accent "> web developer</span> from the{" "}
+              <span className="font-bold font-inter">Philippines</span>.
             </p>
 
             <div className="flex items-center gap-5">
@@ -95,10 +102,77 @@ export default function Home() {
           </motion.div>
         </section>
         <section className="w-full h-screen bg-no-repeat bg-cover mt-28">
-            <p className="mt-16 text-4xl text-center">My Skills</p>
-            <div className="w-full p-8 mt-8 ">
-
+          <p className="mt-16 text-4xl text-center">My Skills</p>
+          <div className="relative mx-auto h-[500px] max-w-[1800px]  sm:h-[650px]">
+            <div className="skewed-container flex flex-col gap-y-4">
+              <div className="flex gap-4">
+                <SkillFragment blank={true} />
+                <SkillFragment
+                  className="z-20"
+                  SvgIcon={ReactjsSvg}
+                  skillText={"React.Js"}
+                  titleClassName="text-gray-700"
+                  mainBg="bg-white "
+                />
+                <SkillFragment
+                  className="z-10"
+                  SvgIcon={FigmaSvg}
+                  skillText={"Figma"}
+                  titleClassName="text-gray-50"
+                  mainBg="bg-gray-900"
+                />
+                <SkillFragment
+                  className="z-0"
+                  SvgIcon={NodeJsSvg}
+                  skillText={"Nodejs"}
+                  titleClassName="text-gray-200"
+                  mainBg="bg-teal-600"
+                />
+              </div>
+              <div className="flex gap-4">
+                <SkillFragment blank={true} />
+                <SkillFragment blank={true} />
+                <SkillFragment
+                  className="z-20"
+                  SvgIcon={MongodbSvg}
+                  skillText={"MongoDb"}
+                  titleClassName="text-gray-50"
+                  mainBg="bg-teal-700 "
+                />
+                <SkillFragment
+                  className="z-10"
+                  SvgIcon={JavaSvg}
+                  skillText={"Java"}
+                  titleClassName="text-gray-900"
+                  mainBg="bg-white"
+                />
+                <SkillFragment
+                  className="z-0"
+                  SvgIcon={GithubSvg}
+                  skillText={"Github"}
+                  titleClassName="text-gray-900"
+                  mainBg="bg-white "
+                />
+              </div>
+              <div className="flex gap-4">
+                <SkillFragment blank={true} />
+                <SkillFragment
+                  className="z-20"
+                  SvgIcon={MysqlSvg}
+                  skillText={"MySQL"}
+                  titleClassName="text-gray-50"
+                  mainBg="bg-orange-200"
+                />
+                <SkillFragment
+                  className="z-10"
+                  SvgIcon={NextjsSvg}
+                  skillText={"NextJs"}
+                  titleClassName="text-gray-800"
+                  mainBg="bg-white "
+                />
+              </div>
             </div>
+          </div>
         </section>
       </main>
     </>
