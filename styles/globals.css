@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "./svgs.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 * {
     margin: 0;
@@ -26,6 +29,9 @@ body {
 
 
 /* Fonts */
+.font-ibm{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
 
 .font-bitter {
     font-family: 'Bitter', serif;
@@ -68,5 +74,14 @@ body {
 }
 
 .skewed-container{
+    animation: move 60s infinite ease-in-out;
     transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);
+}
+
+    /* 0%, 100% {transform: translateY(-5%) translateX(-30%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px)}
+    50%{transform: translateY(-15%)  translateX(-70%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);} */
+
+@keyframes move {
+    0%, 100% {transform: translateY(10%) translateX(0%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px)}
+    50%{transform: translateY(-15%)  translateX(-60%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);}
 }

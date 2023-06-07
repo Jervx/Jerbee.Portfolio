@@ -19,8 +19,8 @@ const Nav = () => {
       className="sticky top-0 z-[12] bg-white/80 py-1 backdrop-blur-md dark:bg-gray-900/70 w-full"
     >
       <div className="flex items-center justify-between h-16 px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <a onClick={()=>router.push("/")} className="flex-shrink-0 ">
-          Jerbee.Paragas
+        <a onClick={()=>router.push("/")} className="flex-shrink-0 cursor-pointer">
+          Jerbee.Portfolio
         </a>
         <div className="flex items-center justify-start space-x-10">
           {" "}

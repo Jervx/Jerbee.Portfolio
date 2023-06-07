@@ -22,7 +22,7 @@ const GithubSvg = () => {
           stroke="none"
           stroke-width="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
