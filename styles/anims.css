@@ -1,0 +1,17 @@
+@keyframes planet {
+    0% { transform: rotate(0deg) translatey(0px); }
+    100%{ transform: rotate(360deg) translatey(0px); }
+}
+
+@keyframes drifts {
+    0%, 100% { transform: rotate(0deg) translateY(0vh) translateX(-5vh); }
+    40% { transform: rotate(180deg) translateY(20vh) translateX(90vh); }
+    70% { transform: rotate(260deg) translateY(30vh) translateX(40vh);}
+}
+
+@keyframes move {
+    /* 0%, 100% {transform: translateY(-5%) translateX(-30%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px)}
+    50%{transform: translateY(-15%)  translateX(-70%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);} */
+    0%, 100% {transform: translateY(15%) translateX(5%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px)}
+    50%{transform: translateY(-10%)  translateX(-60%) rotateX(15deg) rotateZ(-20deg) skewX(20deg) translateZ(0px);}
+}
