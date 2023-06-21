@@ -3,11 +3,11 @@ import React from "react";
 const FigmaSvg = () => {
   return (
     <svg viewBox="0 0 32 32" fill="none">
-      <g stroke-width="0"></g>
+      <g strokeWidth="0"></g>
       <g
         
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g >
         {" "}

@@ -3,8 +3,8 @@ import React from "react";
 const MysqlSvg = () => {
   return (
     <svg viewBox="-18.458 -22.75 191.151 191.151" fill="#000000">
-      <g stroke-width="0"></g>
-      <g stroke-linecap="round" stroke-linejoin="round"></g>
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         <path d="M-18.458 6.58h191.151v132.49H-18.458V6.58z" fill="none"></path>
         <path

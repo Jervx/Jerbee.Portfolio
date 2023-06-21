@@ -7,11 +7,11 @@ const GithubSvg = () => {
       version="1.1"
       fill="currentColor"
     >
-      <g  stroke-width="0"></g>
+      <g  strokeWidth="0"></g>
       <g
         
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g >
         {" "}
@@ -20,7 +20,7 @@ const GithubSvg = () => {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
           fillRule="evenodd"
         >

@@ -19,7 +19,7 @@ export default function Home() {
       <main className="w-full overflow-hidden md:px-16">
         <HeroMe />
         <SkillSection />
-        <PlayGroundSection />
+        {/* <PlayGroundSection /> */}
       </main>
         <Footer />
     </>

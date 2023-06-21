@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 
 import Moon from "./Icons/Moon";
 import Sun from "./Icons/Sun";
+import Systems from "./Icons/Systems";
 
 const ToggleTheme = () => {
   const themes = ["light", "dark"];
   const [selected, setSelected] = useState(themes[0]);
 
   useEffect(() => {
+    console.log(selected, getTheme());
     setSelected(getTheme());
   }, []);
 
@@ -16,7 +18,6 @@ const ToggleTheme = () => {
     const newTheme = selected === themes[0] ? themes[1] : themes[0];
     setSelected(newTheme);
     setTheme(newTheme);
-    console.log(newTheme);
   };
 
   return (
@@ -25,10 +26,16 @@ const ToggleTheme = () => {
       onClick={() => themeEvent()}
     >
       <span>
-        {selected === themes[0] ? (
-          <Moon className="h-5" />
+        {selected === "system" ? (
+          <Systems className="h-5" />
         ) : (
-          <Sun className="h-5" />
+          <>
+            {selected === themes[0] ? (
+              <Sun className="h-5" />
+            ) : (
+              <Moon className="h-5" />
+            )}
+          </>
         )}
       </span>
     </button>

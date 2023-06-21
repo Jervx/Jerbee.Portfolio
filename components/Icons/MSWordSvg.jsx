@@ -3,11 +3,11 @@ import React from "react";
 const MSWordSvg = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <defs>
@@ -20,9 +20,9 @@ const MSWordSvg = () => {
             gradientTransform="translate(0 1720)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#2368c4"></stop>
-            <stop offset="0.5" stop-color="#1a5dbe"></stop>
-            <stop offset="1" stop-color="#1146ac"></stop>
+            <stop offset="0" stopColor="#2368c4"></stop>
+            <stop offset="0.5" stopColor="#1a5dbe"></stop>
+            <stop offset="1" stopColor="#1146ac"></stop>
           </linearGradient>
         </defs>
         <title>file_type_word</title>

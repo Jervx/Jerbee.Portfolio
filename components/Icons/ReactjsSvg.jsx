@@ -3,11 +3,11 @@ import React from "react";
 const ReactjsSvg = () => {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor">
-      <g stroke-width="0"></g>
+      <g strokeWidth="0"></g>
       <g
         
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g >
         {" "}

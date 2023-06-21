@@ -11,8 +11,8 @@ const TailwindSvg = () => {
         <g strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g>
           <title>file_type_tailwind</title>

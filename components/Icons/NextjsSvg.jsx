@@ -8,8 +8,8 @@ const NextjsSvg = () => {
       preserveAspectRatio="xMidYMid"
       fill="currentColor"
     >
-      <g stroke-width="0"></g>
-      <g stroke-linecap="round" stroke-linejoin="round"></g>
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         {" "}
         <g>
