@@ -28,8 +28,10 @@ import HtmlSvg from "../Icons/HtmlSvg";
 
 const SkillSection = () => {
   return (
-    <section className="w-full bg-no-repeat bg-cover mt-28 px-[10rem]">
-        <p className="my-8 tracking-wide text-right text-7xl font-open-sans">My Expertise</p>
+    <section className="w-full bg-no-repeat bg-cover mt-28 px-[10rem] relative">
+      <p className="my-8 tracking-wide text-right text-7xl font-open-sans">
+        {/* My Expertise */}
+      </p>
       <div className="relative mx-auto lg:max-h-min max-w-[1800px] overflow-hidden  sm:h-[650px] rounded-3xl ">
         {/* left-[-60%] top-[10vh] top-0 left-0  */}
         <div className="absolute flex flex-col origin-top-left will-change-transform skewed-container gap-y-5">
